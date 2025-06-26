@@ -1,28 +1,30 @@
-# 🎬 Netflix Data Analysis using SQL
+# Netflix Show Success Predictor
 
-This project explores Netflix's dataset using structured SQL queries to uncover content trends, genre distribution, release patterns, and regional preferences.
+This project uses a machine learning model to predict whether a Netflix show will be a **Hit** or **Not Hit** based on features like type, country, cast, director, genres, and IMDb stats. It includes a user-friendly Streamlit web app, a comprehensive SQL analysis, and an exploratory data notebook.
 
-## 📊 Project Overview
+## Features
 
-- Performed structured analysis on Netflix content data using PostgreSQL
-- Explored patterns in:
-  - Title distribution by type (Movies vs. TV Shows)
-  - Genre trends over time
-  - Content release years and timelines
-  - Country-wise content production
-  - Ratings and content maturity analysis
+- Predicts the likelihood of Netflix content being successful
+- Categorical encoding and feature engineering
+- Trained using Random Forest Classifier
+- SQL-based business insights (15 scenarios)
+- Interactive Streamlit UI
 
-## 🛠️ Tools & Technologies
+## Dataset
 
-- **Database**: PostgreSQL  
-- **Query Language**: SQL  
-- **Environment**: pgAdmin / SQL Workbench
+The dataset `netflix_titles_with_IMDB.csv` is a merged version of Netflix titles and IMDb metadata. If the full dataset is too large for GitHub, a sample is provided with a link to the full version in the README or repo description.
 
+## SQL Analysis
 
-## 🧠 Key Learnings
+Inside `analysis/Netflix Analysis.sql`:
+- 15 business problem solutions using SQL
+- Insightful metrics on content type, country, genre, ratings, and trends
 
-- Mastered SQL operations like `JOIN`, `GROUP BY`, subqueries, filtering, and sorting
-- Gained insights into real-world entertainment data and trends
-- Practiced writing efficient, readable SQL queries for business-oriented questions
+## Jupyter Notebook
 
+`Netflix Analysis.ipynb` performs data cleaning, feature engineering, and visual EDA to understand patterns in Netflix content and prepare the data for model training.
+
+## License
+
+This project is for academic and portfolio purposes only.
 
